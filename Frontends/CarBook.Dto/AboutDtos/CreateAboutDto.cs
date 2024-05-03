@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace CarBook.Dto.AboutDtos
 {
-    internal class Class2
+    public class CreateAboutDto
     {
+        public string title { get; set; }
+        public string description { get; set; }
+        public string imageUrl { get; set; }
     }
 }

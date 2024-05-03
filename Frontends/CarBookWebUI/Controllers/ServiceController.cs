@@ -2,19 +2,21 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace CarBookWebUI.ViewComponents.TestimonialViewComponents
+namespace CarBookWebUI.Controllers
 {
-    public class _TestimonialComponantPartial : ViewComponent
+    public class ServiceController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
-        public _TestimonialComponantPartial(IHttpClientFactory httpClientFactory)
+
+        public ServiceController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
-        public async Task<IViewComponentResult> InvokeAsync()
+
+        public async Task<IActionResult> Index() 
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7091/api/Testimonials");
+            var responseMessage = await client.GetAsync("https://localhost:7091/api/Services");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -22,6 +24,7 @@ namespace CarBookWebUI.ViewComponents.TestimonialViewComponents
                 return View(values);
             }
             return View();
+
         }
     }
 }
