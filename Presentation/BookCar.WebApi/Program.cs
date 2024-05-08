@@ -5,10 +5,12 @@ using BookCar.Application.Features.CQRS.Handlers.CarHandlers;
 using BookCar.Application.Features.CQRS.Handlers.CategoryHandlers;
 using BookCar.Application.Features.CQRS.Handlers.ConctactHandlers;
 using BookCar.Application.Interfaces;
+using BookCar.Application.Interfaces.BlogInterfaces;
 using BookCar.Application.Interfaces.CarInterfaces;
 using BookCar.Application.Services;
 using CarBook.Persistence.Context;
 using CarBook.Persistence.Repositories;
+using CarBook.Persistence.Repositories.BlogRepositories;
 using CarBook.Persistence.Repositories.CarRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +19,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<CarBookContext>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped(typeof(ICarRepository), typeof(CarRepository));
+builder.Services.AddScoped(typeof(IBlogRepository), typeof(BlogRepository));
+
 
 
 builder.Services.AddScoped<GetAboutQueryHandler>();
