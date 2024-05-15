@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CarBook.Dto.AuthorDtos;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace CarBookWebUI.ViewComponents.BlogViewComponents
