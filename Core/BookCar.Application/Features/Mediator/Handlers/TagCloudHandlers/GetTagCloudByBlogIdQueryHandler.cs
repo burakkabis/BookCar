@@ -1,5 +1,6 @@
 ﻿using BookCar.Application.Features.Mediator.Queries.TagCloudQueries;
 using BookCar.Application.Features.Mediator.Results.TagCloudResults;
+using BookCar.Application.Interfaces.TagCloudInterfaces;
 using MediatR;
 using System;
 using System.Collections.Generic;

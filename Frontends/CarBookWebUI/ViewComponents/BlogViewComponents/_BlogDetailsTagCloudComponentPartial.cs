@@ -15,7 +15,7 @@ namespace CarBookWebUI.ViewComponents.BlogViewComponents
         {
             ViewBag.blogid = id;
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"https://localhost:7060/api/TagClouds/GetTagClodByBlogId/" + id);
+            var responseMessage = await client.GetAsync($"https://localhost:7164/api/TagClouds/GetTagClodByBlogId/" + id);
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
