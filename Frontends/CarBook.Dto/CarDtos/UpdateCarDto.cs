@@ -8,7 +8,7 @@ namespace CarBook.Dto.CarDtos
 {
     public class UpdateCarDto
     {
-       // public int CarId { get; set; }
+        public int CarId { get; set; }
         public int BrandID { get; set; }
         public string Model { get; set; }
         public string CoverImageUrl { get; set; }
