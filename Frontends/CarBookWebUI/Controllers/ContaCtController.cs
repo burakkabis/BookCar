@@ -3,17 +3,17 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
 
-namespace CarBookWebUI.Controllers
+namespace UdemyCarBook.WebUI.Controllers
 {
-    public class ContaCtController : Controller
+    public class ContactController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
-
-        public ContaCtController(IHttpClientFactory httpClientFactory)
+        public ContactController(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
