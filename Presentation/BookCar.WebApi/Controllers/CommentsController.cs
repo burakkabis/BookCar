@@ -1,4 +1,5 @@
-﻿using BookCar.Application.Features.RepositoryPattern;
+﻿using BookCar.Application.Features.Mediator.Commands.CommentCommands;
+using BookCar.Application.Features.RepositoryPattern;
 using CarBook.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -68,11 +69,11 @@ namespace BookCar.WebApi.Controllers
             return Ok(value);
         }
 
-        //[HttpPost("CreateCommentWithMediator")]
-        //public async Task<IActionResult> CreateCommentWithMediator(CreateCommentCommand command)
-        //{
-        //    await _mediator.Send(command);
-        //    return Ok("Yorum başarıyla eklendi");
-        //}
+        [HttpPost("CreateCommentWithMediator")]
+        public async Task<IActionResult> CreateCommentWithMediator(CreateCommentCommand command)
+        {
+            await _mediator.Send(command);
+            return Ok("Yorum başarıyla eklendi");
+        }
     }
 }
