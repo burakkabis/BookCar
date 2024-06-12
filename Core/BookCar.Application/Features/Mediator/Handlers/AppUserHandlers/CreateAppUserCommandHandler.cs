@@ -1,4 +1,5 @@
-﻿using BookCar.Application.Features.Mediator.Commands.AppUserCommands;
+﻿using BookCar.Application.Enums;
+using BookCar.Application.Features.Mediator.Commands.AppUserCommands;
 using BookCar.Application.Interfaces;
 using CarBook.Domain.Entities;
 using MediatR;
@@ -23,10 +24,10 @@ namespace BookCar.Application.Features.Mediator.Handlers.AppUserHandlers
             {
                 Password = request.Password,
                 Username = request.Username,
-              //  AppRoleId = (int)RolesType.Member,
-                //Email = request.Email,
-                //Name = request.Name,
-                //Surname = request.Surname
+                AppRoleId = (int)RolesType.Member,
+                Email = request.Email,
+                Name = request.Name,
+                Surname = request.Surname
             });
         }
     }

@@ -1,11 +1,13 @@
 ﻿using BookCar.Application.Features.Mediator.Commands.LocationCommands;
 using BookCar.Application.Features.Mediator.Queries.LocationQueries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookCar.WebApi.Controllers
 {
+    //[Authorize(Roles =("Admin"))]
     [Route("api/[controller]")]
     [ApiController]
     public class LocationsController : ControllerBase
