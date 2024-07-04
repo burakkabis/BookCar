@@ -16,12 +16,12 @@
 ![AdminOdemeTurleri](https://github.com/burakkabis/BookCar/assets/134310460/a04878b4-c07e-47cc-afb8-aaf4cc3c4e7d)
 ![AdmniAracaOzellikata4](https://github.com/burakkabis/BookCar/assets/134310460/c70d8a11-c1b8-48fc-b124-56fc396e7a22)
 ![Araba Ozellikleri5](https://github.com/burakkabis/BookCar/assets/134310460/d51fb0a1-58a8-4ad5-ae68-8e1d6544cf15)
+![AdminAraca ait3](https://github.com/burakkabis/BookCar/assets/134310460/7da30f64-60c4-45d2-977b-c75be49f936a)
 ![AdminHizmetler](https://github.com/burakkabis/BookCar/assets/134310460/c3592aac-2212-4f7f-970b-5e9c218f9788)
 ![AdminRefranslar](https://github.com/burakkabis/BookCar/assets/134310460/7895cf5c-dfa0-4cef-bcaf-a65d7f7a80f9)
 ![AdminSosyalMedya](https://github.com/burakkabis/BookCar/assets/134310460/86028c03-846e-43ff-b76a-cf14dc265911)
 ![BllogKategori](https://github.com/burakkabis/BookCar/assets/134310460/b6310d5d-334c-4902-b954-30d22cfaaacd)
 ![Admin Iletisim](https://github.com/burakkabis/BookCar/assets/134310460/0866d17c-32d7-4382-a8f4-b5ed8e4bc6ae)
-![AdminAraca ait3](https://github.com/burakkabis/BookCar/assets/134310460/7da30f64-60c4-45d2-977b-c75be49f936a)
 
 
 
